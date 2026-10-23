@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Makna Lagu Oceans &amp; Engines — NIKI | After the Last Song</title>
+  <meta name="description" content="Sebuah refleksi tentang makna lagu Oceans & Engines dari NIKI, kenangan, dan belajar melepaskan seseorang dari masa lalu.">
+  <meta name="theme-color" content="#10151e">
+  <style>
+    :root {
+      --ink: #f4f1ea;
+      --muted: #b7c2ce;
+      --soft: #91a8bc;
+      --accent: #a9c5df;
+      --line: rgba(169, 197, 223, .22);
+      --page: #10151e;
+      --panel: rgba(255,255,255,.045);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(42, 78, 105, .35), transparent 48rem),
+        linear-gradient(180deg, #10151e 0%, #121d29 55%, #10151e 100%);
+      font: 16px/1.85 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    a { color: inherit; }
+    .site-header, main, footer { width: min(820px, 100%); margin-inline: auto; padding-inline: 22px; }
+    .site-header { padding-top: 25px; padding-bottom: 12px; }
+    .brand {
+      display: inline-flex; align-items: center; gap: 10px;
+      text-decoration: none; color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.1rem; letter-spacing: .02em;
+    }
+    .brand-mark { color: var(--accent); font-size: 1.45rem; line-height: 1; }
+    .hero {
+      position: relative; isolation: isolate; overflow: hidden;
+      min-height: 390px; display: grid; align-items: end;
+      padding: clamp(25px, 6vw, 52px);
+      margin-top: 12px; border: 1px solid rgba(169,197,223,.16);
+      border-radius: 22px;
+      background:
+        linear-gradient(180deg, rgba(8,15,24,.08) 0%, rgba(8,15,24,.28) 30%, rgba(8,15,24,.94) 100%),
+        radial-gradient(ellipse at 72% 24%, rgba(202,220,230,.6) 0, rgba(136,169,192,.22) 9%, transparent 24%),
+        linear-gradient(180deg, #253e54 0%, #182d40 43%, #101b28 100%);
+    }
+    .hero::before, .hero::after {
+      content: ""; position: absolute; z-index: -1; left: -8%; width: 116%;
+      pointer-events: none;
+    }
+    .hero::before {
+      height: 56%; bottom: 0;
+      background:
+        repeating-linear-gradient(174deg, transparent 0 18px, rgba(169,197,223,.12) 19px 20px, transparent 21px 38px),
+        linear-gradient(180deg, rgba(50,91,117,.25), rgba(8,19,30,.92));
+      clip-path: polygon(0 16%, 9% 12%, 18% 20%, 29% 8%, 40% 17%, 53% 6%, 66% 19%, 77% 11%, 88% 18%, 100% 9%, 100% 100%, 0 100%);
+    }
+    .hero::after {
+      height: 34%; bottom: -3%;
+      background: repeating-linear-gradient(178deg, rgba(166,197,219,.14) 0 1px, transparent 2px 17px);
+      opacity: .75;
+      clip-path: polygon(0 25%, 14% 12%, 28% 26%, 43% 10%, 56% 28%, 71% 14%, 85% 25%, 100% 12%, 100% 100%, 0 100%);
+    }
+    .hero-content { max-width: 620px; }
+    .eyebrow {
+      margin: 0 0 12px; color: var(--accent); text-transform: uppercase;
+      letter-spacing: .18em; font-size: .72rem; font-weight: 700;
+    }
+    .hero h1 {
+      margin: 0; max-width: 680px;
+      font: 400 clamp(2.2rem, 7vw, 4.1rem)/1.08 Georgia, "Times New Roman", serif;
+      letter-spacing: -.035em; text-wrap: balance;
+    }
+    .hero-subtitle { max-width: 550px; margin: 17px 0 0; color: #d4dce5; line-height: 1.65; }
+    .hero-meta { margin: 20px 0 0; color: #b4c1cf; font-size: .85rem; }
+    .tagline {
+      margin: 25px 0 0; color: #a9c5df; font: italic 1rem/1.6 Georgia, "Times New Roman", serif;
+    }
+    main { padding-top: 30px; padding-bottom: 50px; }
+    article { max-width: 720px; margin-inline: auto; }
+    .intro { font-size: 1.07rem; color: #e0e6ec; }
+    h2 {
+      margin: 38px 0 12px; padding-bottom: 8px;
+      color: var(--accent); border-bottom: 1px solid var(--line);
+      font: 400 clamp(1.35rem, 4vw, 1.7rem)/1.3 Georgia, "Times New Roman", serif;
+    }
+    p { margin: 0 0 18px; }
+    .note {
+      margin: 22px 0; padding: 15px 18px;
+      border-left: 2px solid var(--accent); border-radius: 0 10px 10px 0;
+      background: var(--panel); color: #d5dee7;
+    }
+    .section-label { color: var(--soft); font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; }
+    .closing {
+      margin-top: 30px; padding: 25px 22px; text-align: center;
+      border: 1px solid var(--line); border-radius: 16px;
+      background: linear-gradient(135deg, rgba(169,197,223,.08), rgba(255,255,255,.015));
+    }
+    .closing p:last-child { margin-bottom: 0; }
+    .closing-line { color: var(--accent); font: italic 1.2rem/1.55 Georgia, "Times New Roman", serif; }
+    footer { border-top: 1px solid var(--line); padding-top: 22px; padding-bottom: 30px; color: #9eacba; text-align: center; font-size: .82rem; }
+    footer p { margin: 4px 0; }
+    @media (max-width: 520px) {
+      .site-header, main, footer { padding-inline: 17px; }
+      .hero { min-height: 365px; border-radius: 16px; }
+      .hero-meta { line-height: 1.7; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="After the Last Song — halaman utama">
+      <span class="brand-mark" aria-hidden="true">〰</span>
+      <span>After the Last Song</span>
+    </a>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="article-title">
+      <div class="hero-content">
+        <p class="eyebrow">Music · Personal Stories</p>
+        <h1 id="article-title">Oceans &amp; Engines <span style="white-space:nowrap">— NIKI</span></h1>
+        <p class="hero-subtitle">Tentang seseorang dari masa lalu, kenangan yang tertinggal, dan belajar melepaskan.</p>
+        <p class="hero-meta">Album <em>Nicole</em> · 2022 · Makna lagu &amp; refleksi personal</p>
+        <p class="tagline">Some stories stay with us, even after they end.</p>
+      </div>
+    </section>
+
+    <article>
+      <p class="section-label">Sebuah catatan personal</p>
+      <p class="intro">Ada kalanya kita mendengarkan sebuah lagu, lalu tanpa sadar teringat pada seseorang yang pernah menjadi bagian dari hidup kita. Padahal, mungkin sudah lama sejak terakhir kali kita benar-benar dekat dengannya.</p>
+
+      <p>Bukan berarti kita ingin mengulang semuanya. Terkadang, kita hanya teringat bagaimana rasanya saat orang itu masih ada, bagaimana hari-hari terasa berbeda ketika masih bersama, dan bagaimana semuanya perlahan berubah setelah hubungan itu berakhir.</p>
+
+      <p>Buatku, <em>Oceans &amp; Engines</em> dari NIKI punya perasaan yang sulit dijelaskan. Ada kesedihan yang terasa tenang di dalamnya, seperti seseorang yang sudah mencoba menerima perpisahan, tetapi masih menyimpan sedikit kenangan tentang orang yang pernah begitu berarti.</p>
+
+      <h2>Ketika Seseorang yang Pernah Dekat Menjadi Bagian dari Masa Lalu</h2>
+      <p>Aku pernah berada di posisi ketika seseorang yang dahulu dekat denganku akhirnya menjadi bagian dari masa lalu. Kami pernah punya cerita sendiri, pernah menjadi bagian dari hari-hari satu sama lain, sampai akhirnya keadaan membawa kami ke arah yang berbeda.</p>
+
+      <p>Pada akhirnya, hubungan itu selesai. Aku memilih untuk menerima keputusan tersebut dan melanjutkan hidupku sendiri.</p>
+
+      <p>Namun, menerima perpisahan ternyata tidak selalu membuat semua perasaan langsung hilang. Ada kalanya rasa penasaran muncul begitu saja. Sesekali, aku masih melihat media sosialnya, sekadar ingin tahu bagaimana kehidupannya sekarang.</p>
+
+      <p>Melihatnya bahagia setelah kami berpisah menghadirkan perasaan yang agak sulit dijelaskan. Ada rasa lega karena dia terlihat baik-baik saja. Di sisi lain, ada kenangan lama yang kadang datang kembali, mengingatkanku pada masa ketika kami masih bersama.</p>
+
+      <p>Bukan berarti aku ingin kembali ke masa itu. Mungkin aku hanya sesekali merindukan bagian dari kehidupan yang pernah membuatku bahagia.</p>
+
+      <h2>Makna Oceans &amp; Engines bagi Seseorang yang Pernah Kehilangan</h2>
+      <p><em>Oceans &amp; Engines</em> menceritakan perasaan saat seseorang harus menghadapi perpisahan dengan orang yang masih memiliki arti dalam hidupnya. Ada kenangan yang belum hilang, perasaan yang tidak bisa begitu saja dihapus, dan kenyataan bahwa hubungan yang dahulu dijalani bersama kini sudah sampai di penghujungnya.</p>
+
+      <p>Lagu ini juga mengingatkanku bahwa melepaskan seseorang bukan berarti harus membenci atau melupakan semua yang pernah terjadi. Kita bisa menerima bahwa hubungan itu sudah berakhir, sembari mengakui bahwa orang tersebut pernah memiliki tempat tersendiri dalam hidup kita. Dan mungkin, tidak apa-apa kalau sesekali kita masih merasa sedih ketika mengingatnya.</p>
+
+      <div class="note">Kadang, menerima perpisahan bukan berarti kita sudah lupa. Bisa jadi, kita hanya mulai belajar mengingat tanpa harus kembali.</div>
+
+      <h2>Melihat Dia Bahagia Setelah Kita Berpisah</h2>
+      <p>Ada satu hal yang mungkin tidak banyak dibicarakan setelah sebuah hubungan berakhir: melihat seseorang yang pernah kita sayangi melanjutkan hidupnya dengan baik dan bahagia, bahkan ketika kita sudah tidak lagi menjadi bagian dari kehidupannya.</p>
+
+      <p>Kita bisa ikut senang melihatnya bahagia, tetapi pada saat yang sama, kenangan lama mungkin muncul tanpa diminta. Bukan karena kita tidak ingin dia bahagia, melainkan karena kita pernah menjadi bagian dari perjalanan hidupnya.</p>
+
+      <p>Aku sendiri terkadang masih merasa galau ketika mengingat masa lalu. Apalagi ketika sebuah lagu seperti <em>Oceans &amp; Engines</em> tiba-tiba terdengar dan membawa pikiranku kembali pada seseorang yang sudah lama tidak lagi berjalan bersamaku.</p>
+
+      <p>Ada perbedaan antara merindukan seseorang dan ingin kembali bersamanya. Ada pula perbedaan antara mengenang masa lalu dan memilih untuk terus hidup di dalamnya.</p>
+
+      <p>Aku mungkin masih penasaran dengan kabarnya sesekali, tetapi kehidupanku sekarang juga tetap berjalan. Dia punya dunianya sendiri, begitu pula aku. Pada akhirnya, aku tidak perlu mengetahui setiap hal tentang kehidupannya untuk bisa berharap yang terbaik baginya.</p>
+
+      <h2>Pada Akhirnya, Kita Harus Berpisah</h2>
+      <p>Ada seseorang yang mungkin tidak akan pernah benar-benar kita lupakan, meskipun kehidupan sudah membawa kita ke jalan yang berbeda. Sekarang, kita sudah punya kehidupan masing-masing. Aku tidak tahu bagaimana perasaanmu ketika mengingat masa lalu, atau apakah kamu masih mengingat hal-hal kecil yang dahulu pernah kita lalui bersama. Namun, aku berharap kamu bahagia dengan kehidupan yang sedang kamu jalani.</p>
+
+      <p>Mungkin sesekali aku masih melihat kabarmu. Mungkin ada hari ketika sebuah lagu membuatku kembali mengingat semuanya. Tapi aku tidak ingin selamanya tinggal di masa lalu.</p>
+
+      <p>Terima kasih karena pernah menjadi bagian dari ceritaku. Terima kasih untuk kenangan yang pernah membuatku bahagia, bahkan jika pada akhirnya kita tidak berjalan bersama sampai sejauh yang mungkin pernah kubayangkan.</p>
+
+      <p>Aku tidak harus melupakanmu untuk melanjutkan hidup. Aku juga tidak harus menghapus semua kenangan hanya supaya bisa menerima bahwa hubungan kita sudah selesai.</p>
+
+      <p>Mungkin memang ada orang yang hadir dalam hidup kita bukan untuk selamanya, melainkan untuk menjadi bagian dari perjalanan yang membentuk diri kita hari ini.</p>
+
+      <p>Dan jika suatu hari nanti aku kembali mendengar lagu ini, mungkin aku masih akan teringat padamu. Bedanya, aku berharap saat itu aku bisa tersenyum, mengingat bahwa kita pernah punya cerita, lalu kembali menjalani kehidupanku tanpa merasa harus kembali ke masa itu.</p>
+
+      <p>Aku pernah menyayangimu. Kenangan itu akan tetap menjadi bagian dari masa laluku, tetapi aku juga punya masa depan yang perlu kujalani.</p>
+
+      <div class="closing">
+        <p class="closing-line">Some stories stay with us, even after they end.</p>
+        <p>Beberapa cerita akan tetap tinggal di dalam diri kita, bahkan setelah semuanya berakhir.</p>
+        <p class="section-label">— Ridho · Berdasarkan kisah pribadi</p>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>After the Last Song</p>
+    <p>Makna lagu · Cerita di balik musik · Catatan personal</p>
+    <p>&copy; 2026 After the Last Song</p>
+  </footer>
+</body>
+</html>
